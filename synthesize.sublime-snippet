@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * @return ${1:type}
+ */
+${2:visibility} function get${3:Name}() {
+
+  return \$this->${5:property};
+
+} // get${3:Name}
+
+/**
+ * @param ${1:type} ${4:arg}
+ */
+${2:visibility} function set${3:Name}( ${4:arg} ) {
+
+  \$this->${5:property} = ${4:arg};
+
+} // set${3:Name}
+]]></content>
+  <tabTrigger>synthesize</tabTrigger>
+  <description>Generate both a setter and getter for a class property</description>
+  <scope>source.php</scope>
+</snippet>

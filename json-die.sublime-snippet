@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+die( json_encode( ${1:variable} ) );
+]]></content>
+  <tabTrigger>jdie</tabTrigger>
+  <description>JSON encode a variable and then dump/kill the script</description>
+  <scope>source.php</scope>
+</snippet>

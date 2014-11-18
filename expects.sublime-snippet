@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+\$${1:object}->expects( \$this->${2:once}() )
+  ->method( '${3:method}' )
+  ->will( \$this->returnValue( ${4:returnvalue} ) );
+]]></content>
+  <tabTrigger>expects</tabTrigger>
+  <scope>source.php</scope>
+</snippet>
