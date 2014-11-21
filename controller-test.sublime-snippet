@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+/**
+ * @test
+ */
+public function ${1:methodName}() {
+
+  \$endpoint = \$${2:endpoint};
+  \$params   = ${3:[]};
+  \$request  = \$this->${4:_createGetRequest}( \$endpoint, \$params );
+  \$user     = \$this->_getUser();
+  \$session  = \$this->_configureUserClientSession( \$user );
+
+  \$methods    = [];
+  \$injections = [ 'client_session' => \$session ];
+
+  list( \$router, \$controller ) = \$this->_getRoutableMock( \$request, \$methods, \$injections );
+
+  \$controller;
+
+  \$router->dispatch( \$request );
+
+} // ${1:methodName}
+]]></content>
+  <tabTrigger>controller-test</tabTrigger>
+  <description>Behance specific snippet to generate the scaffolding for a typical controller unit test</description>
+  <scope>source.php</scope>
+</snippet>
