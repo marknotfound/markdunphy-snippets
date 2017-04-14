@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * @return ${3:type}
+ */
+public function get${1:Property}() ${4:: returnType} {
+
+  return \$this->_${2:property};
+
+} // get${1}
+]]></content>
+	<tabTrigger>begetter</tabTrigger>
+	<description>Create a public getter method in Behance style.</description>
+	<scope>source.php</scope>
+</snippet>
